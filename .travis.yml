@@ -19,7 +19,7 @@ after_success:
         - echo "$MY_DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
         # take those images and push them up to docker hub
         - docker push falkobenthin/multi-client
-        - docker push falkobenthin/multi-nginx
-        - docker push falkobenthin/multi-server
+        #        - docker push falkobenthin/multi-nginx
+        #        - docker push falkobenthin/multi-server
         - docker push falkobenthin/multi-worker
 
